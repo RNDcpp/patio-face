@@ -1,0 +1,11 @@
+version: '2'
+services:
+  development:
+    build:
+      context: .
+      dockerfile: tensorflow/Dockerfile
+    command: bash
+    volumes:
+      - ./:/app
+      - ./output:/output
+      - ./mydata:/mydata

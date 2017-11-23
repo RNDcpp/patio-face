@@ -15,7 +15,7 @@ mkdir faces-np64
 mkdir faces-np64_edge
 mkdir faces-np64_gray
 python get_face.py patio faces
-for line in `cat blacklist.txt`
+for line in `cat blacklist2.txt`
 do
   rm faces/$line
 done
